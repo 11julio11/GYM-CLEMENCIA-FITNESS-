@@ -5,3 +5,119 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.navbar{
+    position: relative;
+    z-index: 1000; /*posiciona el menu sobre la seccion de home*/
+}
+
+.navbar.navbar-fixed{
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.home{
+    position: relative;
+    z-index: 1; /*nos aseguramos que la seccion .home este detras del menu*/
+    height: 100vh;
+    width: 100%;
+    background: url() no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .home-content{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+.home .text-one{
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #0ba61f, 0 0 30px #ffffff, 0 0 40px #0ba61f;
+  }
+  .home .text-two{
+    color: #fffefe;
+    position: relative;
+    z-index: 2;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #0ba61f, 0 0 30px #ffffff, 0 0 40px #0ba61f;
+  }
+  .home .text-three{
+    font-size: 40px;
+    margin: 5px 0;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    font-size: large;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #0ba61f, 0 0 30px #ffffff, 0 0 40px #0ba61f;
+  }
+  .home .text-four{
+    position: relative;
+    z-index: 2;
+    font-size: 23px;
+    margin: 5px 0;
+    color: #f0f5f0;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #0ba61f, 0 0 30px #ffffff, 0 0 40px #0ba61f;
+  }
+  .home .button{
+    position: relative;
+    z-index: 2;
+    margin: 14px 0;
+  }
+  .home .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #fffefe;
+    color: #19b105;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+  }
+  .home .button button:hover{
+    border-color: #0ba61f;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /*estilos para el video*/
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+  /* Ajustes adicionales para el texto en dispositivos pequeños */
+  @media (max-width: 576px) {
+    .home .text-one {
+        font-size: 18px;
+    }
+    .home .text-two {
+        font-size: 40px;
+    }
+    .home .text-three {
+        font-size: 24px;
+    }
+    .home .text-four {
+        font-size: 14px;
+    }
+}
