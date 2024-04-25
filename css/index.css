@@ -217,3 +217,50 @@
   background-color: #0056b3;
 }
 
+
+/* entrenadores */
+.entrenadores {
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+  color: #f4f4f4;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.entrenadores h2, .entrenadores h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.entrenadores p {
+  font-size: 1.2em;
+}
+
+.center-tarjetas, .tarjetas {
+  position: relative;
+  background: #444;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.center-tarjetas img, .tarjetas img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
