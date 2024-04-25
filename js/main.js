@@ -1,10 +1,9 @@
-//fijar el menu 
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.querySelector(".navbar");
 
   // Función para agregar o quitar la clase 'navbar-fixed' dependiendo del desplazamiento
   function handleScroll() {
-    if (window.scrollY > navbar.offsetHeight) {
+    if (window.scrollY > navbar.offsetTop) { // Usamos offsetTop en lugar de offsetHeight
       navbar.classList.add("navbar-fixed");
     } else {
       navbar.classList.remove("navbar-fixed");
@@ -14,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Evento para manejar el desplazamiento de la página
   window.addEventListener("scroll", handleScroll);
 
-  // Eventos para agregar la clase 'navbar-fixed' al pasar el cursor sobre el menú
-  navbar.addEventListener("mouseover", function () {
+  // Evento para agregar la clase 'navbar-fixed' al pasar el cursor sobre el menú
+  navbar.addEventListener("mouseenter", function () { // Cambiamos mouseover a mouseenter
     navbar.classList.add("navbar-fixed");
   });
 
-  navbar.addEventListener("mouseout", function () {
+  navbar.addEventListener("mouseleave", function () { // Cambiamos mouseout a mouseleave
     handleScroll(); // Verificar el desplazamiento al quitar el cursor
   });
 });

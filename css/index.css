@@ -5,6 +5,20 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* menu */
+.navbar-custom{
+  background-color: #ed5e06;
+}
+
+.navbar-custom .navbar-nav  .nav-link{
+  color: #fffefe;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover{
+  text-shadow: 0 0 30px #fffefe, 0 0 20px #ed5e06, 0 0 60px #ffffff, 0 0 70px #ed5e06;
+}
+
+
 .navbar{
     position: relative;
     z-index: 1000; /*posiciona el menu sobre la seccion de home*/
@@ -43,34 +57,34 @@
     font-size: 25px;
     position: relative;
     z-index: 2;
-    color: #ffffff;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #0ba61f, 0 0 30px #ffffff, 0 0 40px #0ba61f;
+    color: #000000;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ed5e06, 0 0 30px #ffffff, 0 0 40px #ed5e06;
   }
   .home .text-two{
-    color: #fffefe;
+    color: #000000;
     position: relative;
     z-index: 2;
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #0ba61f, 0 0 30px #ffffff, 0 0 40px #0ba61f;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ed5e06, 0 0 30px #ffffff, 0 0 40px #ed5e06;
   }
   .home .text-three{
     font-size: 40px;
     margin: 5px 0;
     position: relative;
     z-index: 2;
-    color: #ffffff;
+    color: #000000;
     font-size: large;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #0ba61f, 0 0 30px #ffffff, 0 0 40px #0ba61f;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ed5e06, 0 0 30px #ffffff, 0 0 40px #ed5e06;
   }
   .home .text-four{
     position: relative;
     z-index: 2;
     font-size: 23px;
     margin: 5px 0;
-    color: #f0f5f0;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #0ba61f, 0 0 30px #ffffff, 0 0 40px #0ba61f;
+    color: #000000;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ed5e06, 0 0 30px #ffffff, 0 0 40px #ed5e06;
   }
   .home .button{
     position: relative;
@@ -84,13 +98,13 @@
     font-size: 25px;
     font-weight: 400;
     background: #fffefe;
-    color: #19b105;
+    color: #157be8;
     cursor: pointer;
     border: 2px solid transparent;
     transition: all 0.4s ease;
   }
   .home .button button:hover{
-    border-color: #0ba61f;
+    border-color: #22a60b;
     background-color: #ffffff;
     color: #000000;
   }
@@ -105,6 +119,20 @@
     z-index: 1;
     object-fit: cover;
   }
+
+  /* buscador */
+  .btn-outline-custom{
+    color: #ed5e06;
+    background-color: #000000;
+    border-color: #ff6505;
+  }
+
+  .btn-outline-custom:hover{
+    color: #f9f8f7;
+    background-color: #000000; /* Cambia este color al que desees */
+    border-color: #ed5e06; 
+  }
+
 
   /* Ajustes adicionales para el texto en dispositivos pequeños */
   @media (max-width: 576px) {
@@ -121,3 +149,71 @@
         font-size: 14px;
     }
 }
+
+/* clases */
+/* Estilos para la sección de clases */
+.clases {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.clases-titulo {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.clases-descripcion {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.clases-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+

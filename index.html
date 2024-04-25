@@ -7,15 +7,16 @@
     <!-- link de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- link de vinculcion de la carpeta de estilos -->
+    <!-- link de vinculcion de la carpeta de estilos -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="website icon" type="png" href="./img/gimnasio (1).png">
     <title>Clemencia Firness</title>
 </head>
 
 <body>
     <!-- encabezado -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
@@ -23,37 +24,38 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="d-flex align-items-center"> <!-- Contenedor para alinear elementos -->
-                    <a class="navbar-brand me-3" href="/index.html">Clemencia Fitness</a> <!-- Título del sitio -->
-                    
+                    <a class="navbar-brand me-3" href="/index.html" style="color: rgb(255, 255, 255);">Clemencia
+                        Fitness</a>
+
                     <!--zona para la imagen -->
                     <div class="navbar-brand d-none d-lg-block">
                         <img src="img/download.jpg" alt="" width="70" height="50">
                     </div>
                 </div>
-        
+
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <!-- Elementos del menú -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Clases</a>
+                            <a class="nav-link" href="#Clases">Clases</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">Entrenadores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="" >Planes de entrenamientos</a>
+                            <a class="nav-link" href="#">Planes de entrenamientos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Contacto</a>
+                            <a class="nav-link" href="#">Contacto</a>
                         </li>
                     </ul>
                     <!-- boton de busqueda -->
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-custom" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -63,26 +65,154 @@
     <!-- presentacion del home gym -->
     <section class="home" id="home">
         <div class="home-content">
-          <div class="text">
-            <video src="video/video-home.mp4" autoplay muted loop></video>
-            <div class="text-one">Bienvenidos a</div>
-            <div class="text-two">Clemencia Fitness</div>
-            <div class="text-three">Quieres conseguir el cuerpo de tus deseos</div>
-            <div class="text-four">Entrenas con nosotros para romper tus limites</div>
-          </div>
-          <!--<div class="button">
+            <div class="text">
+                <video src="video/video-home.mp4" autoplay muted loop></video>
+                <div class="text-one">Bienvenidos a</div>
+                <div class="text-two">Clemencia Fitness</div>
+                <div class="text-three">Quieres conseguir el cuerpo de tus deseos</div>
+                <div class="text-four">Entrenas con nosotros para romper tus limites</div>
+            </div>
+            <!--<div class="button">
             <button>contratarme porque</button>
           </div>-->
         </div>
-      </section>
-    
+    </section>
+
+    <!-- clases -->
+
+    <section class="clases" id="Clases">
+        <h2 class="clases-titulo">Clases</h2>
+        <p class="clases-descripcion">Descubre una variedad de clases emocionantes diseñadas para ayudarte a alcanzar
+            tus objetivos de fitness.</p>
+        <div class="clases-content">
+            <!-- Tarjeta de clase 1 -->
+            <div class="card">
+                <img src="#" class="card-img-top" alt="Clase 1">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 1</h5>
+                    <p class="card-text">Descripción de la Clase 1</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta de clase 2 -->
+            <div class="card">
+                <img src="imagen2.jpg" class="card-img-top" alt="Clase 2">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 2</h5>
+                    <p class="card-text">Descripción de la Clase 2</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="imagen3.jpg" class="card-img-top" alt="Clase 3">
+                <div class="card-body">
+                    <h5 class="card-title">Clase 3</h5>
+                    <p class="card-text">Descripción de la Clase 3</p>
+                    <a href="#" class="boton btn-primary">Ver más</a>
+                </div>
+            </div>
 
 
 
-<!-- script de bootstrap y carpeta de js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        </div>
+    </section>
+
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- script de bootstrap y carpeta de js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
