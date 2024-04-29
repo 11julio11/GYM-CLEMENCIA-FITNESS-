@@ -334,18 +334,25 @@
                     <h2>CONTACTO</h2>
                 </div>
             </div>
-            <div class="fila">
-                <div class="col">
-                    <input type="text" placeholder="Ingrese Email">
+            <form action="https://formsubmit.co/romerojesusdavid76@gmail.com" method="POST">
+                <div class="fila">
+                    <div class="col">
+                        <label>Correo Electronico</label>
+                        <input type="email" name="email" placeholder="Ingrese Email">
+                    </div>
+                    <div class="col">
+                        <label>Nombres y Apellidos</label>
+                        <input type="text" name="fullname" placeholder="Ingrese Nombre">
+                    </div>
                 </div>
-                <div class="col">
-                    <input type="text" placeholder="Ingrese Nombre">
+                <div class="mensaje">
+                    <label>Mensaje</label> 
+                    <textarea name="message" rows="10" placeholder="Ingresa el Mensaje"></textarea>
+                    <button type="submit">Enviar Mensaje</button>
                 </div>
-            </div>
-            <div class="mensaje">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa el Mensaje"></textarea>
-                <button>Enviar Mensaje</button>
-            </div>
+                <input type="hidden" name="_next" value="https://lucent-kitsune-13784e.netlify.app">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
             <div class="fila-datos">
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
@@ -361,7 +368,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <footer>
