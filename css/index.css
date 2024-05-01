@@ -539,7 +539,70 @@ body {
     font-size: 20px;
 }
 
+
 /* PLANES */
+.planes {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.planes h3 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.tarjeta {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: zoomInOut 2s ease-in-out infinite;
+}
+
+
+
+.tarjeta h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.precio {
+    color: #efb810;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Numerología de la sección */
+.planes::before {
+    content: "06"; /* Número correspondiente a la sección */
+    display: block;
+    font-size: 5rem;
+    color: #efb810;
+    margin-bottom: 20px;
+}
 
 
 /* CONTACTO */
@@ -642,7 +705,7 @@ body {
 /* FOOTER */
 footer {
     background-color: #656563;
-    padding: 30px 0;
+    padding: 30px;
 }
 
 footer .info {
@@ -666,6 +729,14 @@ footer .info a {
 
 /* RESPONSIVE */
 @media only screen and (max-width: 900px) {
+    header .contenedor-header {
+        padding: 34px; /* Reducir el espacio en el encabezado */
+    }
+
+    footer {
+        padding: 20px; /* Reducir el espacio en el pie de página */
+    }
+
     header nav {
         position: initial;
         display: none;
@@ -690,7 +761,7 @@ footer .info a {
         width: 100%;
         height: 100vh;
         background-color: #151623;
-        z-index: 99;
+        z-index: 89;
     }
 
     nav.responsive a {
@@ -704,74 +775,44 @@ footer .info a {
         display: none;
     }
 
-    .nosotros .fila {
+    .nosotros .fila,
+    .servicios .contenido-seccion .fila,
+    .comodidades .fila,
+    .equipo .fila,
+    .contacto .fila,
+    .planes {
         display: block;
     }
 
-    .nosotros .fila .col {
+    .nosotros .fila .col,
+    .servicios .contenido-seccion .fila .col,
+    .comodidades .fila .col,
+    .equipo .fila .col,
+    .contacto .fila .col,
+    .planes .tarjeta {
         width: 100%;
         margin: auto;
-    }
-
-    .nosotros .fila .col img {
-        max-width: 200px;
-        display: block;
-        margin: auto;
-    }
-
-    .servicios .contenido-seccion .fila {
-        display: block;
-    }
-
-    .servicios .contenido-seccion .fila .col {
-        width: 100%;
-    }
-
-    .comodidades .fila {
-        display: block;
-    }
-
-    .comodidades .fila .col {
-        width: 100%;
-    }
-
-    .comodidades .fila .col img {
-        max-width: 200px;
-    }
-
-    .equipo .fila {
-        display: block;
-    }
-
-    .equipo .fila .col {
-        width: 100%;
         margin-bottom: 20px;
+    }
+
+    .nosotros .fila .col img,
+    .servicios .contenido-seccion .fila .col img,
+    .comodidades .fila .col img,
+    .equipo .fila .col img {
+        max-width: 200px;
+        display: block;
+        margin: auto;
     }
 
     .equipo .fila .col img {
         max-height: 200px;
     }
 
-    .equipo .fila .info {
+    .equipo .fila .info,
+    .contacto .fila .info,
+    .planes .tarjeta {
         max-width: 250px;
         margin: auto;
-    }
-
-    .contacto .fila {
-        display: block;
-    }
-
-    .contacto .fila .col {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .contacto .fila-datos {
-        display: block;
-    }
-
-    .contacto .fila-datos .col {
-        margin-bottom: 20px;
     }
 
     footer .info {
